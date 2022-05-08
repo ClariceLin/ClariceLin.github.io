@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <style type="text/css">
+
+        .buttonv {
+        display: inline-block;
+        padding: 5px 20px;
+        transform: skew(-20deg);
+        border: 5px solid #666;
+        font-size:30px;
+        font-family: 'Titillium Web'; font-style: normal;
+        background-color:transparent;
+        color:#6b7275;
+        cursor: pointer;
+        transition-duration:2s;
+        width:180px;
+        height:200px;
+        transform: rotate(-15deg) skew(10deg,10deg);
+        }
+
+        .buttonv:hover{
+        color:#e2e2e2;
+        background-color:#6b7275;
+        border:2px #6b7275 solid;
+        
+        transform:translate(0px,50px) rotate(30deg);
+        }
+
+        .buttong {
+        width: 170px;;
+        height: 170px;
+        border: 5px solid #666;
+        font-size:30px;
+        font-family: 'Titillium Web'; font-style: normal;
+        background-color:transparent;
+        color:#6b7275;
+        cursor: pointer;
+        transition-duration:2s;
+        
+        }
+
+        .buttong:hover{
+        color:#e2e2e2;
+        background-color:#6b7275;
+        border:2px #6b7275 solid;
+        
+        transform:translate(0px,50px) rotate(30deg);
+        
+        }
+
+        .buttond {
+        border: 5px solid #666;        
+        font-size:30px;
+        font-family: 'Titillium Web'; font-style: normal;
+        background-color:transparent;
+        color:#6b7275;
+        cursor: pointer;
+        transition-duration:2s;
+        width: 220px; height: 90px;
+        transform: rotate(15deg);
+        
+        }
+
+        .buttond:hover{
+        color:#e2e2e2;
+        background-color:#6b7275;
+        border:2px #6b7275 solid;
+        
+        transform:translate(0px,50px) rotate(30deg);
+        }
+
+        .buttonc {
+        border-radius: 50%;
+        font-size:30px;
+        font-family: 'Titillium Web'; font-style: normal;
+        border:  5px solid #666;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color:transparent;
+        color:#6b7275;
+        cursor: pointer;
+
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+        transition-duration:2s;
+        margin: 5px;
+        }
+
+        .buttonc:hover{
+        color:#e2e2e2;
+        background-color:#6b7275;
+        border:2px #6b7275 solid;
+
+        transform:translate(0px,50px) rotate(30deg);
+        }
+
+        
+
+        @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+        .fa-2x {
+        font-size: 2em;
+        }
+        .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size:30px;
+        }
+
+
+        .main-menu:hover,nav.main-menu.expanded {
+        width:250px;
+        overflow:visible;
+        }
+
+        .main-menu {
+        background:#e2e2e2;
+        border-right:3px solid #6b7275;
+        position:absolute;
+        top:0;
+        bottom:0;
+        height:100%;
+        left:0;
+        width:60px;
+        overflow:hidden;
+        -webkit-transition:width .05s linear;
+        transition:width .05s linear;
+        -webkit-transform:translateZ(0) scale(1,1);
+        z-index:1000;
+        }
+
+        .main-menu>ul {
+        margin:7px 0;
+        }
+
+        .main-menu li {
+        position:relative;
+        display:block;
+        width:250px;
+        }
+
+        .main-menu li>a {
+        position:relative;
+        display:table;
+        border-collapse:collapse;
+        border-spacing:0;
+        color:#999;
+        font-family: arial;
+        font-size: 30px;
+        text-decoration:none;
+        -webkit-transform:translateZ(0) scale(1,1);
+        -webkit-transition:all .1s linear;
+        transition:all .1s linear;
+        
+        }
+
+        .main-menu .nav-icon {
+        position:relative;
+        display:table-cell;
+        width:60px;
+        height:36px;
+        text-align:center;
+        vertical-align:middle;
+        font-size:18px;
+        }
+
+        .main-menu .nav-text {
+        position:relative;
+        display:table-cell;
+        vertical-align:middle;
+        width:190px;
+        font-family: 'Titillium Web', sans-serif;
+        }
+
+        .main-menu>ul.logout {
+        position:absolute;
+        left:0;
+        bottom:0;
+        }
+
+        .no-touch .scrollable.hover {
+        overflow-y:hidden;
+        }
+
+        .no-touch .scrollable.hover:hover {
+        overflow-y:auto;
+        overflow:visible;
+        }
+
+        a:hover,a:focus {
+        text-decoration:none;
+        }
+
+        nav {
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        -o-user-select:none;
+        user-select:none;
+        }
+
+        nav ul,nav li {
+        outline:0;
+        margin:0;
+        padding:0;
+        }
+        .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+        color:#e2e2e2;
+        background-color:#6b7275;
+        }
+        .area {
+        float: left;
+        background: #e2e2e2;
+        width: 100%;
+        height: 100%;
+        }
+        @font-face {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 350;
+        src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+        }
+
+        
+        .container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .btnb {
+        margin: 20px auto;
+        border: none;
+        padding: 10px 44px;
+        font-size: 30px;
+        position: relative;
+        font-family: 'Titillium Web'; font-style: normal;
+        
+        }
+        .btnb::before {
+        transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: #e2e2e2;
+        ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        .btnb .btnb-text {
+        color: #6b7275;
+        mix-blend-mode: difference;
+        }
+        .btnb:hover::before {
+        background: #6b7275;
+        width: 100%;
+        }
+        
+        #circle{
+        margin:0 auto;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        border: 5px solid #666;
+        }
+
+        #square{
+        color:#6b7275;
+        cursor: pointer;
+        border: 5px solid #666;
+        }
+
+        #d2 {
+        color:#6b7275;
+        cursor: pointer;
+        transform: rotate(-75deg);
+        border: 5px solid #666;
+        }
+
+        #v2 {
+        display: inline-block;
+        padding: 5px 20px;
+        transform: skew(-20deg);
+        border: 5px solid #666;
+        font-size:30px;
+        font-family: 'Titillium Web'; font-style: normal;
+        background-color:transparent;
+        color:#6b7275;
+        cursor: pointer;
+        transition-duration:2s;
+        width:80px;
+        height:50px;
+        transform: rotate(-15deg) skew(10deg,10deg);
+        }
+
+        
+        
+        </style>    
+    </head>
+
+    <body>   
+        <body bgcolor="#e2e2e2"></body>
+        
+        
+        
+    
+        <input type ="button" value="Value" class="buttonv"
+        style="position: absolute; margin-top: 20%; margin-left: 70%; ">
+        </input>    
+
+        <input type ="button"  value="Design" class="buttond" 
+        style="position: absolute; margin-top: 35%; margin-left: 40%;">
+        </input>
+
+        <input type ="button"  value="Goal" class="buttong"
+        style="position: absolute; margin-top: 17%; margin-left: 20%;">
+        </input>
+        
+        <input type ="button"  value="CV" class="buttonc"
+        style="position: absolute; margin-top: 8%; margin-left: 45%;">
+        </input>
+
+        <div id=circle 
+        style="position: absolute; margin-top: 7%; margin-left: 55%; width: 100px; height: 100px; background:#999;"></div>      
+        
+        <div id=square 
+        style="position: absolute; margin-top: 15%; margin-left: 18%; width: 80px; height: 80px; background:#999;"></div>
+
+        <div id=d2 
+        style="position: absolute; margin-top: 37%; margin-left: 36%; width: 130px; height: 50px; background:#999;"></div>
+
+        <div id=v2 
+        style="position: absolute; margin-top: 30%; margin-left: 80%; background:#999;"></div>
+
+
+        <div class="container">
+            <button class="btnb" style="position: absolute; margin-top: 0%; margin-left: 88%;">
+                <span class="btnb-text" onclick="javascript:location.href='about.html'">About</span></button>
+           
+        </div>
+
+        <div style="position: absolute; margin-top: 23%; margin-left: 5%; font-size:30px;
+        font-family: 'Titillium Web'; font-style: normal; color:#6b7275;">
+           <span>></span>
+           
+        </div>
+
+        
+
+        
+
+
+        <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text" onclick="javascript:location.href='activity.html'">
+                            Activity
+                        </span>
+                    </a>
+                  
+                </li>
+
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text" onclick="javascript:location.href='work.html'">
+                            Work
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text" onclick="javascript:location.href='profession.html'">
+                            Profession
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text" onclick="javascript:location.href='about.html'">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text" onclick="javascript:location.href='index.html'">
+                            Home
+                        </span>
+                    </a>
+                   
+                </li>
+        </nav>
+
+
+        
+
+    </body>
+</html>
