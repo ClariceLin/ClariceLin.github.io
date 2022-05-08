@@ -1,2 +1,2 @@
-# jhihsyuanlin.github.io
+# ClariceLin.github.io
 my pages
