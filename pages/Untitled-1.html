@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity</title>
+        <link rel="stylesheet" href="/style1.scss">
+        <style type="text/css">
+
+
+
+.container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnb {
+  margin: 20px auto;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  position: relative;
+  
+}
+.btnb::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #e2e2e2;
+;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btnb .btnb-text {
+  color: #6b7275;
+  mix-blend-mode: difference;
+}
+.btnb:hover::before {
+  background: #6b7275;
+  width: 100%;
+}
+
+
+
+.btn.rounded {
+  border-radius: 50px;
+}
+.btn.rounded .text-green {
+  color: #00F0B5;
+  mix-blend-mode: difference;
+}
+.btn.rounded::before {
+  border-radius: 50px;
+  width: 25%;
+  background: #00F0B5;
+}
+.btn.rounded:hover::before {
+  background: #00F0B5;
+  width: 100%;
+}
+
+.btn {
+
+font-size:30px;
+font-family: 'Titillium Web'; font-style: normal;
+}
+
+#about{
+        border:0;
+        background-color:#e2e2e2;
+        color:#6b7275;
+        border-radius:10px;
+        cursor:pointer;
+        border:2px #6b7275 solid;
+        transition: all 2s;
+        }
+
+        #about:hover{
+        color:#e2e2e2;
+        background-color:#6b7275;
+        border:2px #6b7275 solid;
+        transition: all 2s;
+        }
+        </style>    
+    </head>
+
+    <body>   
+        <body bgcolor="#e2e2e2"></body>
+        
+        
+        
+        
+        <input id="about" type ="button"  value="about" class="btn"
+        style="width:125px;height:50px; position: absolute; margin-top: 0%; margin-left:90%; 
+        "></input>
+
+    
+        <input type ="button" value="Student Ambassador" class="button5"
+        style="position: absolute; margin-top: 5%; margin-left: 25%; ">
+        </input>    
+
+        <input type ="button"  value="Arts Center" class="button5"
+        style="position: absolute; margin-top: 15%; margin-left: 40%;">
+        </input>    
+
+        <input type ="button"  value="Artistic Design" class="button5"
+        style="position: absolute; margin-top: 25%; margin-left: 55%;">
+        </input>    
+
+        
+    <div class="container">
+        <button class="btnb" style="position: absolute; margin-top: 25%; margin-left: 55%;"><span class="btnb-text">Back</span></button>
+       
+    </div>
+
+        
+
+        
+
+
+        <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Activity
+                        </span>
+                    </a>
+                  
+                </li>
+
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Work
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Profession
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+                
+        </nav>
+
+
+        
+
+    </body>
+</html>
